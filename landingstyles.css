@@ -1,0 +1,219 @@
+html{
+    font-size: 16px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+section{
+    padding: 1% 5%;
+}
+img{
+    width: 100%;
+}
+.flex{
+    display:flex;
+}
+#logo{
+    padding: 3%;
+}
+#first{
+    background-image: url('firstbg.png');
+    height: 100vh;
+}
+.nav{
+    padding: 1% 1.5%;
+    font-size: 1.5rem;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+}
+.navbar{
+    border-bottom: 0.1rem solid white;
+}
+#left-text{
+    font-size: 2.5rem;
+    color: white;
+    width: 50%;
+    padding: 3%;
+    margin: auto 0;
+    font-weight: bold;
+}
+#chooser{
+    margin-left: 6%;
+}
+.nav a{
+color: white;
+text-decoration: none;
+}
+.nav a:hover{
+    font-size: 1.8rem;
+    text-decoration: underline;
+}
+select{
+    outline: none;
+    font-size: 1.5rem;
+    border-right: 0.1rem solid gray;
+    font-family: cursive;
+}
+.row{
+    width: 100%;
+    padding: 2% 0%;
+    justify-content: space-between;
+}
+.row>div{
+    width: 30%;
+
+}
+.perk{
+    border-radius: 0.5rem;
+    width: auto;
+    height: 60%;
+    display: block; 
+    margin: auto;
+    box-shadow: 0.2rem 0.2rem 0 0.2rem gray;
+    padding: 3% 5%;
+}
+div#perks{
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+}
+.perk-text{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+#third{
+    background-color: rgba(211,211,211,0.25)
+}
+.property{
+    background-color: white;
+    padding: 0 2%;
+    border-radius: 0.5rem;
+}
+.address{
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 0 2%;
+}
+.type{
+    font-weight: lighter;
+}
+.price{
+    font-size: 1.3rem;
+    color: #f4511e;
+    font-weight: bold;
+}
+.prop{
+    width: 50%;
+    padding: 5%;
+    border-right: 0.1rem solid gray
+}
+.pro{
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+}
+.page{
+    background-color: white;
+    border: 0.2rem solid gray;
+    width: 30%;
+    margin: auto;
+    border-radius: 0.5rem;
+    justify-content: center;
+}
+.property-feats{
+    background-color: white;
+    border: 0.05rem solid gray;
+    justify-content: center;
+    border-radius: 0.8rem;
+    padding: 2%;
+}
+.page a{
+    color: #f4511e;
+    font-weight: bold;
+    text-align: center;
+    padding: 2%;
+}
+.page a:not(last-child){
+    border-right: 0.2rem solid gray;
+}
+a.active{
+    background-color: #f4511e;
+    color: white;
+}
+#feat1{
+    background-image: url('flex-4.png');
+}
+.feat{
+    color: white;
+    font-weight: bold;
+    height: 50%;
+    background-repeat: no-repeat; 
+    background-size: 100%;  
+    border-radius: 3%;
+}
+#feat2{
+background-image: url('flexibility-section-img2.png');
+
+}
+#feat3{
+    background-image: url('flex-3.png');
+}
+#feat4{
+    background-image: url('flexibility-section-img1.png')
+}
+.bold{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+button{
+    outline: none;
+}
+.feat>p{
+    text-align: center;
+}
+.features{
+    width: 50%;
+}
+.feat-wrap{
+    height: 70vh;
+    padding:  1.5% 2%;
+}
+#experiment > p{
+    line-height: 1.6rem;
+}
+input, textarea{
+    display: block;
+    width: 100%;
+    font-size: 1.25rem;
+    background-color: rgba(190,190,190,0.25);
+    outline: none;
+    border: 0.2rem solid;
+    border-color: rgba(190,190,190,0.25);
+    border-radius: 0.5rem;
+}
+.center{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+span{
+    color: #f4511e;
+}
+label{
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+.column{
+    padding: 0.5% 2%;
+    width: 30%;
+}
+form{
+    padding: 2% 3%;
+    border: 0.2rem solid;
+    border-color: rgba(190,190,190,0.25);
+    margin: 1rem 0;
+}
