@@ -23,10 +23,13 @@ img{
 }
 .nav{
     padding: 1% 1.5%;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     text-align: center;
-    align-self: center;
-    justify-self: center;
+    width: 70%;
+
+}
+#fifth > .flex{
+background-color: #f4511e;
 }
 .navbar{
     border-bottom: 0.1rem solid white;
@@ -45,6 +48,7 @@ img{
 .nav a{
 color: white;
 text-decoration: none;
+font-weight: bold;
 }
 .nav a:hover{
     font-size: 1.8rem;
@@ -134,6 +138,7 @@ div#perks{
     font-weight: bold;
     text-align: center;
     padding: 2%;
+    border-right: 0.2rem solid gray;
 }
 a.active{
     background-color: #f4511e;
@@ -209,10 +214,11 @@ label{
 }
 form{
     padding: 2% 3%;
-    border: 0.2rem solid;
+    border: 0.15rem solid;
+    box-shadow: 0.3rem 0.3rem rgba(190,190,190,0.25);
     border-color: rgba(190,190,190,0.25);
     margin: 1rem 0;
+    border-radius: 0.75rem;
 }
-
 @media screen and (max-width: 768px){
 }

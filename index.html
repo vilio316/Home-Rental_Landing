@@ -310,14 +310,17 @@
                     </div>
                     </div>
                     <label for="desc">Description</label>
-                    <textarea maxlength="1500" placeholder="Description" id="desc">
+                    <textarea maxlength="1500" placeholder="Description" id="desc" resize="none">
                         
                     </textarea>
+                    <label for="file">
+                        <p class="center">Upload files here or <span>browse*</span></p>
+                        <p class="center">Supported: PNG, JPEG, JPG</p>
+                    </label>
+                    <input type="file" style="margin: auto; border: 0.2rem dashed #f4511e; width: 50%;" id="file">
+                    
             </form>
-            <div style="margin: auto; border: 0.2rem dashed #f4511e; width: 50%;">
-                <p class="center">Upload files here or <span>browse*</span></p>
-                <p class="center">Supported: PNG, JPEG, JPG</p>
-            </div>
+            
             <div class="flex" style="justify-content: center;"><button style="font-size: 1.2rem; border-radius: 0.5rem; background-color: #F4511E; color: white; padding: 1%; margin-top: 1rem; outline: none;">Add New Property</button></div>
     </section>
     <section id="fifth">
@@ -333,8 +336,7 @@
                 </span>
                 <span class="clicky"></span>
                 <span class="clicky"></span>
-            </div>
-            
+            </div> 
         </div>
     </section>
     <section id="final">
