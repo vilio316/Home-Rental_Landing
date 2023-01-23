@@ -19,8 +19,13 @@
     <a href="#four">Tenants</a>
     <a href="#final">Contact Us</a>
     </div>
+    <div class="hamburger flex">
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
-    <div class="flex">
+    </div>
+    <div class="flex change" id="sec1-content">
     <div id="left-text">The Most Affordable Places to Stay in the San Francisco Bay Area</div>
     <div id="search-tool">
         <div>
@@ -47,10 +52,10 @@
     </section>
     <section id="second">
         <header>
-            <p style="font-size: 2rem; font-weight: bold"><u>Minimum Living Cost</u> takes care of everything</p>
+            <p style="font-size: 2rem; font-weight: bold"><span id="orangeul">Minimum Living Cost</span> takes care of everything</p>
         </header>
-            <div id="container-2" class="flex">
-                <div style="width: 40%;">
+            <div id="container-2" class="flex change">
+                <div id="imgholder-2">
                 <img src="section2.png" alt="Property Face">
                 </div>
             <div id="perks" class="flex">
@@ -89,7 +94,7 @@
         <header><p style="font-size: 2rem; font-weight: bold; display:inline">List Of Properties
         <p style="float: right; font-size: 1.3rem; border-radius: 0.3rem; background-color: #F4511E; color: white; padding: 1%; margin: 0">Search All Properties</p>
         </header>
-        <div class="row flex">
+        <div class="row-prop flex">
             <div class="property">
                 <img src="properties-img4.png" alt="Property 1">
                 <div class="property-desc">
@@ -174,7 +179,7 @@
         </div>
         </div>
         </div>
-        <div class="row flex">
+        <div class="row-prop flex">
             <div class="property">
                 <img src="properties-img3.png" alt="Property 3">
                 <div class="property-desc">
@@ -281,11 +286,11 @@
             <button style="font-size: 1.3rem; border-radius: 0.3rem; background-color: #F4511E; color: white; padding: 1%; margin: 0">Search Rooms</button>
         </div>
     </section>
-           <header><p class="bold center">Add  Your Property and be Confident that it would be Filled Up!</p></header>
+           <header><p class="bold center" style="margin-bottom: 0">Add  Your Property and be Confident that it would be Filled Up!</p></header>
             <section style="margin: auto;">
                 <form>
                     <header><p class="bold center" style="font-size: 1.75rem; color: #f4511e">Add  A New Property</p></header>
-                    <div class="flex">
+                    <div class="flex row-prop">
                 <div class="column">
                 <label for="name">Name<span>*</span></label>
                 <input type="text" id="name" name="name">
@@ -310,18 +315,18 @@
                     </div>
                     </div>
                     <label for="desc">Description</label>
-                    <textarea maxlength="1500" placeholder="Description" id="desc" resize="none">
+                    <textarea maxlength="1500" placeholder="Description" id="desc" style="resize:none">
                         
                     </textarea>
-                    <label for="file">
+                    <div style="border: 0.2rem dashed #f4511e; width: 50%; margin: auto;">
                         <p class="center">Upload files here or <span>browse*</span></p>
                         <p class="center">Supported: PNG, JPEG, JPG</p>
-                    </label>
+                    </div>
                     <input type="file" style="margin: auto; border: 0.2rem dashed #f4511e; width: 50%;" id="file">
-                    
+                    <div class="flex" style="justify-content: center;"><button style="font-size: 1.2rem; border-radius: 0.5rem; background-color: #F4511E; color: white; padding: 1%; margin-top: 1rem; outline: none;">Add New Property</button></div>
             </form>
             
-            <div class="flex" style="justify-content: center;"><button style="font-size: 1.2rem; border-radius: 0.5rem; background-color: #F4511E; color: white; padding: 1%; margin-top: 1rem; outline: none;">Add New Property</button></div>
+            
     </section>
     <section id="fifth">
         <div class="flex">
@@ -341,18 +346,18 @@
     </section>
     <section id="final">
         <hr>
-        <div class="flex">
-            <div style="width: 60%">
+        <div class="flex row-prop">
+            <div style="width: 60%" class="column">
             <img src="logo.png">
             </div>
-            <div>
+            <div class="column">
             <p>345 Bouchester Ave, San Francisco, CA 949011</p>
             <p>(123)456-7890</p>
             <div>socialsss</div>
             </div>
         </div>
-        <div class="flex" style="justify-content: space-between;">
-            <div>
+        <div class="flex row-prop">
+            <div class="column">
             <a href="">About Us</a>
             <a>CONTACT US</a>
             <a>HELP</a>

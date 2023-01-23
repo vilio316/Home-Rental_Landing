@@ -14,32 +14,38 @@ img{
 .flex{
     display:flex;
 }
+#sec1-content{
+    align-items: center;
+    justify-content: center;
+}
 #logo{
     padding: 3%;
 }
 #first{
     background-image: url('firstbg.png');
-    height: 100vh;
+    height: 80vh;
 }
 .nav{
     padding: 1% 1.5%;
     font-size: 1.75rem;
     text-align: center;
     width: 70%;
-
 }
 #fifth > .flex{
 background-color: #f4511e;
+padding: 1rem;
 }
+
 .navbar{
     border-bottom: 0.1rem solid white;
+    align-items: center;
 }
 #left-text{
     font-size: 2.5rem;
     color: white;
     width: 50%;
     padding: 3%;
-    margin: auto 0;
+    margin: 0;
     font-weight: bold;
 }
 #chooser{
@@ -60,29 +66,28 @@ select{
     border-right: 0.1rem solid gray;
     font-family: cursive;
 }
-.row{
+.row-prop, .row{
     width: 100%;
     padding: 2% 0%;
     justify-content: space-between;
-}
-.row>div{
-    width: 30%;
-
 }
 .perk{
     border-radius: 0.5rem;
     width: auto;
     height: 60%;
     display: block; 
-    margin: auto;
     box-shadow: 0.2rem 0.2rem 0 0.2rem gray;
     padding: 3% 5%;
 }
-div#perks{
+#perks{
     align-items: center;
     flex-direction: column;
     width: 60%;
     margin: auto;
+}
+.perks > div{
+    width: 33%;
+    padding: 1%;
 }
 .perk-text{
     font-size: 1.4rem;
@@ -95,6 +100,7 @@ div#perks{
     background-color: white;
     padding: 0 2%;
     border-radius: 0.5rem;
+    width: 30%;
 }
 .address{
     font-weight: bold;
@@ -171,6 +177,12 @@ background-image: url('flexibility-section-img2.png');
 }
 button{
     outline: none;
+    border: none;
+}
+#orangeul{
+    border-bottom: 0.3rem solid #f4511e;
+    color: black;
+    border-radius: 0.25rem;
 }
 .feat>p{
     text-align: center;
@@ -178,12 +190,32 @@ button{
 .features{
     width: 50%;
 }
+.hamburger span{
+    width: 100%;
+    background-color: white;
+    height: 0.5rem;
+    border-radius: 0.3rem;
+    margin: 7%;
+    display: block;
+}
+.hamburger{
+    height: 100%;
+    width: 5%;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;  
+    display: none;
+
+}
 .feat-wrap{
     height: 70vh;
     padding:  1.5% 2%;
 }
 #experiment > p{
     line-height: 1.6rem;
+}
+#imgholder-2{
+    width: 40%;
 }
 input, textarea{
     display: block;
@@ -221,4 +253,47 @@ form{
     border-radius: 0.75rem;
 }
 @media screen and (max-width: 768px){
+    .nav{
+        display: none;
+    }
+    .navbar{
+        position: relative;
+    }
+    .hamburger{
+        position: absolute;
+        right: 0;
+        top: 33%;
+        width: 10%;
+        display: block;
+    }
+    html{
+        font-size: 10px;
+    }
+    .change{
+        flex-direction: column;
+    }
+    #left-text{
+        width: 100%;
+        text-align: center;
+    }
+    #perks{
+        margin: 0.95rem 0;
+        width: 100%;
+        justify-content: space-between;
+    }
+    #imgholder-2{
+        width: 100%;
+    }
+    .row-prop{
+        flex-direction: column;
+    }   
+    .property{
+        width: 100%;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+    }
+    .column{width: 100%;}
+    #third > header{
+        margin-bottom: 1.0rem;
+    }
 }
