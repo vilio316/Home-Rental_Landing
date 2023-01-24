@@ -122,7 +122,6 @@ select{
 .pro{
     font-weight: bold;
     text-align: center;
-    margin: auto;
 }
 .page{
     background-color: white;
@@ -131,6 +130,13 @@ select{
     margin: auto;
     border-radius: 0.5rem;
     justify-content: center;
+}
+input[type="file"]{
+    opacity: 0;
+    height:0;
+}
+#input-form{
+text-align: center;
 }
 .property-feats{
     background-color: white;
@@ -156,10 +162,10 @@ a.active{
 .feat{
     color: white;
     font-weight: bold;
-    height: 50%;
     background-repeat: no-repeat; 
     background-size: 100%;  
     border-radius: 3%;
+    height: auto;
 }
 #feat2{
 background-image: url('flexibility-section-img2.png');
@@ -187,7 +193,7 @@ button{
 .feat>p{
     text-align: center;
 }
-.features{
+#features{
     width: 50%;
 }
 .hamburger span{
@@ -208,11 +214,23 @@ button{
 
 }
 .feat-wrap{
-    height: 70vh;
-    padding:  1.5% 2%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column ;
+    width: 50%;
+    height: 100%;
+}
+#button0{
+    display: block;
+}
+#button1{
+    display: none;
 }
 #experiment > p{
     line-height: 1.6rem;
+}
+#experiment{
+    width: 50%;
 }
 #imgholder-2{
     width: 40%;
@@ -238,7 +256,7 @@ span{
 label{
     font-size: 1.3rem;
     font-weight: bold;
-    padding: 0.5rem;
+    padding: 0.75rem;
 }
 .column{
     padding: 0.5% 2%;
@@ -295,5 +313,26 @@ form{
     .column{width: 100%;}
     #third > header{
         margin-bottom: 1.0rem;
+    }
+    #four{
+        flex-direction: column-reverse;
+    }
+    #experiment{
+        width: 100%;
+        text-align: center;
+    }
+    #button0{
+        display: none;
+    }
+    #button1{
+        display: block;
+        margin: auto;
+        width: 40%;
+    }
+    #features{
+        width: 100%;
+    }
+    .feat-wrap{
+    flex-direction: row;
     }
 }
