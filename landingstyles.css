@@ -23,7 +23,6 @@ img{
 }
 #first{
     background-image: url('firstbg.png');
-    height: 90vh;
 }
 .nav{
     padding: 1% 1.5%;
@@ -32,7 +31,7 @@ img{
     width: 70%;
 }
 #fifth > .flex{
-background-color: #f4511e;
+background-color: rgba(244, 81, 30, 0.25);
 padding: 1rem;
 }
 
@@ -45,7 +44,6 @@ padding: 1rem;
     color: white;
     width: 50%;
     padding: 3%;
-    margin: 0;
     font-weight: bold;
 }
 #chooser{
@@ -97,23 +95,30 @@ select{
     background-color: rgba(211,211,211,0.25)
 }
 .property{
-    background-color: white;
-    padding: 0 2%;
-    border-radius: 0.5rem;
+    border-radius: 0.8rem;
     width: 30%;
+}
+.property-desc{
+    background-color: white;
+    border-radius:  0.8rem;
+    border: 0.1rem solid gray;
+    margin-top: -1rem;
 }
 .address{
     font-weight: bold;
     font-size: 1.4rem;
-    padding: 0 2%;
+    padding: 3% 2%;
+    margin-top: 0;
 }
 .type{
     font-weight: lighter;
+    padding: 0 2%;
 }
 .price{
     font-size: 1.3rem;
     color: #f4511e;
     font-weight: bold;
+    padding: 0 2%;
 }
 .prop{
     width: 50%;
@@ -140,10 +145,16 @@ text-align: center;
 }
 .property-feats{
     background-color: white;
-    border: 0.05rem solid gray;
     justify-content: center;
     border-radius: 0.8rem;
     padding: 2%;
+    border: 0.2rem solid gray;
+}
+.property-feats > div{
+    padding: 1%;
+}
+.property-feats :last-child{
+    border-right: none;
 }
 .page a{
     color: #f4511e;
@@ -202,6 +213,20 @@ button{
     width: 10rem;
     margin-left: -5rem;
 }
+.link-menu{
+    width: 100%;
+    background-color: blue;
+    border-radius: 1rem;
+    display: none;
+}
+.link-menu a{
+    text-align: center;
+    width: 100%;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
 .hamburger{
     height: 100%;
     width: 5%;
@@ -238,7 +263,7 @@ button{
 input, textarea{
     display: block;
     width: 100%;
-    font-size: 1.25rem;
+    font-size: 2rem;
     background-color: rgba(190,190,190,0.25);
     outline: none;
     border: 0.2rem solid;
@@ -345,7 +370,13 @@ form{
         width: 7.5rem;
         margin-left: -3.75rem;
     }
-    #lorem, iframe{
+    #lorem, iframe, .page{
         width: 100%;
+    }
+    .blue > a{
+        display: block;
+        width: 100%;
+        text-align: center;
+
     }
 }
