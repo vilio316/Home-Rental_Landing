@@ -1,10 +1,16 @@
 let hamburg= document.getElementById("hamburger");
+let links= document.getElementById("links");
 hamburg.addEventListener("click", 
 ()=> {
-    let links= document.getElementById("links");
      if(links.style.display !== "block"){
-        links.style.display= "block"
+        links.classList.add("shown");
      }
-     else{links.style.display = "none"}
+     else{links.classList.remove("shown")}
     
     })
+
+    let closer = document.querySelector("#close");
+    closer.addEventListener("click", ()=>{
+    links.classList.remove("shown");
+    }
+    )
